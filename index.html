@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+body {
+    margin: 0 auto;
+    padding: 50px 40%;
+}
+.btns{
+    margin: 30px 15px;
+    
+}
+.btns button:hover{
+cursor: pointer !important;
+background-color: beige;
+color: black;
+border-radius: 5px;
+
+}
+
+
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="pic">
+    <img src="./img/after (1).webp" id="image" alt="">
+</div>
+<div class="btn">
+   <div class="btns">
+    <button onclick="thirdImage()" >chnage image</button>
+   </div>
+   <div class="btns">
+    <button onclick="secoendImage()" >chnage image</button>
+   </div>
+   <div class="btns">
+    <button onclick="firstImage()" >chnage image</button>
+   </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function thirdImage(){
+            var img = document.getElementById('image')
+            img.src ='./img/before (2).webp'
+        }
+
+        function secoendImage(){
+            var img = document.getElementById('image')
+            img.src ='./img/after (6).webp'
+        }
+        function firstImage(){
+            var img = document.getElementById('image')
+            img.src ='./img/after (2).webp'
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
